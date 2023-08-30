@@ -1,6 +1,7 @@
 package com.company.vacationtourapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -81,5 +82,9 @@ public class DetailsActivity extends AppCompatActivity implements PaymentResultL
     public void onPaymentError(int i, String s) {
         Toast.makeText(getApplicationContext(),"Payment Failure!",Toast.LENGTH_SHORT).show();
         PayStatus.setText(s);
+    }
+
+    public void previous(View view) {
+        startActivity(new Intent(DetailsActivity.this,MainActivity.class));
     }
 }
