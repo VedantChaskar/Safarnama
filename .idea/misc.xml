@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp V 1.0/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp v1.0/app/src/main/res/layout/activity_main.xml" value="0.24320652173913043" />
+        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master - Copy/app/src/main/res/layout/activity_details.xml" value="0.536" />
+        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master - Copy/app/src/main/res/layout/activity_main.xml" value="0.24320652173913043" />
+        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master - Copy/app/src/main/res/layout/recents_row_item.xml" value="0.24320652173913043" />
+        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master - Copy/app/src/main/res/layout/top_places_row_item.xml" value="0.24320652173913043" />
         <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master/app/src/main/res/layout/activity_details.xml" value="0.264" />
-        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/SE/Sem 4/Mini Project/VacationTourApp-master/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
       </map>
     </option>
   </component>

@@ -20,10 +20,12 @@ public class MainActivity extends AppCompatActivity {
     RecentsAdapter recentsAdapter;
     TopPlacesAdapter topPlacesAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         List<RecentsData> recentsDataList = new ArrayList<>();
         recentsDataList.add(new RecentsData("AM Lake","India","From $200",R.drawable.recentimage1));
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         topPlacesAdapter = new TopPlacesAdapter(this, topPlacesDataList);
         topPlacesRecycler.setAdapter(topPlacesAdapter);
 
-    }
+
 
     }
+
+}
