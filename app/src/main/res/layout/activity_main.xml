@@ -51,7 +51,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile" />
+            app:srcCompat="@drawable/profile_pic" />
 
         <EditText
             android:id="@+id/editText"
@@ -139,29 +139,31 @@
         app:layout_constraintStart_toStartOf="parent">
 
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+        <Button
+            android:id="@+id/main"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:src="@drawable/home" />
+            android:background="@drawable/ic_action_name" />
+
+        <Button
+            android:id="@+id/guide"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/profile" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/profileicon" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/flights" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/hotel" />
+            app:srcCompat="@drawable/hotels" />
 
     </LinearLayout>
 

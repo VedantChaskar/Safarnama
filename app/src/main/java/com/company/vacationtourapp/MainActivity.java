@@ -1,6 +1,9 @@
 package com.company.vacationtourapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,12 +23,31 @@ public class MainActivity extends AppCompatActivity {
     RecentsAdapter recentsAdapter;
     TopPlacesAdapter topPlacesAdapter;
 
+    private Button guide;
+    private Button main;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        guide=(Button) findViewById(R.id.guide);
+        guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGuide();
+            }
+        });
+
+        main=(Button) findViewById(R.id.main);
+        main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain();
+            }
+
+        });
 
         List<RecentsData> recentsDataList = new ArrayList<>();
         recentsDataList.add(new RecentsData("AM Lake","India","From $200",R.drawable.recentimage1));
@@ -46,6 +68,19 @@ public class MainActivity extends AppCompatActivity {
 
         setTopPlacesRecycler(topPlacesDataList);
     }
+
+    private void openGuide() {
+        Intent intent = new Intent(this,GuideActivity.class);
+        startActivity(intent);
+    }
+
+    private void openMain() {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
     private  void setRecentRecycler(List<RecentsData> recentsDataList){
 

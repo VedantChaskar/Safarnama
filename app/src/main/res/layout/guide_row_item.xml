@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_bg">
+
+    <TextView
+        android:id="@+id/guide_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Name: Vedant Chaskar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guide_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Phone No. : 9988776655"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="@+id/guide_name"
+        app:layout_constraintTop_toBottomOf="@+id/guide_name" />
+
+    <TextView
+        android:id="@+id/guide_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Location: America"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        app:layout_constraintStart_toStartOf="@+id/guide_number"
+        app:layout_constraintTop_toBottomOf="@+id/guide_number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
