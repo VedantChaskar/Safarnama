@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "213344947139",
+    "project_id": "trip-planner-and-booking-app",
+    "storage_bucket": "trip-planner-and-booking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213344947139:android:00b37ec3dc8eb214554b76",
+        "android_client_info": {
+          "package_name": "com.company.vacationtourapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213344947139-lareu1fgem4pdpuurgk1mg5tjijua2e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAr-P3-gV6Q1ydkanwn45NvXdZyPadn9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213344947139-lareu1fgem4pdpuurgk1mg5tjijua2e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
