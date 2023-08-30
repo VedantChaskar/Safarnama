@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recentRecycler, topPlacesRecycler;
     RecentsAdapter recentsAdapter;
     TopPlacesAdapter topPlacesAdapter;
+    private SearchView searchView;
+    private List<RecentsData> recentsDataList;
 
     private Button guide;
     private Button main;
@@ -31,6 +35,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        searchView = findViewById(R.id.searchView);
+        searchView.clearFocus();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterList(newText);
+                return true;
+            }
+        });
 
         guide=(Button) findViewById(R.id.guide);
         guide.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        List<RecentsData> recentsDataList = new ArrayList<>();
+        recentsDataList = new ArrayList<>();
         recentsDataList.add(new RecentsData("Machu Picchu","Peru","Rs.75,000/person",R.drawable.machu_picchu));
         recentsDataList.add(new RecentsData("Bora Bora","France","Rs.1,20,000/person",R.drawable.bora_bora));
         recentsDataList.add(new RecentsData("Angkor Wat","Cambodia","Rs.50,000/person",R.drawable.ankor_wat));
@@ -77,6 +96,21 @@ public class MainActivity extends AppCompatActivity {
         topPlacesDataList.add(new TopPlacesData("Great Wall Of China","China","Rs.70,000/person",R.drawable.the_great_wall_of_china));
 
         setTopPlacesRecycler(topPlacesDataList);
+    }
+
+    private void filterList(String text) {
+        List<RecentsData> filteredList = new ArrayList<>();
+        for (RecentsData recentsDataList : recentsDataList){
+            if (recentsDataList.getCountryName().toLowerCase().contains(text.toLowerCase())){
+                filteredList.add(recentsDataList);
+            }
+        }
+        if (filteredList.isEmpty()){
+            Toast.makeText(this,"No data found",Toast.LENGTH_SHORT).show();
+        }else{
+            recentsAdapter.setfilteredList(filteredList);
+
+        }
     }
 
     private void openGuide() {
@@ -109,8 +143,6 @@ public class MainActivity extends AppCompatActivity {
         topPlacesRecycler.setLayoutManager(layoutManager);
         topPlacesAdapter = new TopPlacesAdapter(this, topPlacesDataList);
         topPlacesRecycler.setAdapter(topPlacesAdapter);
-
-
 
     }
 

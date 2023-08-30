@@ -23,6 +23,11 @@ public class RecentsAdapter extends RecyclerView.Adapter<RecentsAdapter.RecentsV
     Context context;
     List<RecentsData> recentsDataList;
 
+    public void setfilteredList(List<RecentsData> filteredList){
+        this.recentsDataList = filteredList;
+        notifyDataSetChanged();
+    }
+
     public RecentsAdapter(Context context, List<RecentsData> recentsDataList) {
         this.context = context;
         this.recentsDataList = recentsDataList;

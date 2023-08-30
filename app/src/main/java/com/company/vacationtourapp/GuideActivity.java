@@ -49,9 +49,8 @@ public class GuideActivity extends AppCompatActivity {
 
         List<GuideData> guideDataList = new ArrayList<>();
         guideDataList.add(new GuideData("Vedant Chaskar", "9988776655", "United States"));
-        guideDataList.add(new GuideData("Hasti Datar", "9897969594", "Australia"));
-        guideDataList.add(new GuideData("Prerna Gawali", "9977553311", "France"));
-        guideDataList.add(new GuideData("Khanjan Joshi", "8866442200", "Peru"));
+        guideDataList.add(new GuideData("Suyash Shelar", "9136326286", "Australia"));
+        guideDataList.add(new GuideData("Archa Jadhav", "9112931702", "France"));
 
         setGuideRecycler(guideDataList);
     }
