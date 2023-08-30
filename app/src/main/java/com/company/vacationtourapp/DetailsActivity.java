@@ -21,11 +21,13 @@ public class DetailsActivity extends AppCompatActivity implements PaymentResultL
     Button PayBtn;
     TextView PayStatus;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         Checkout.preload(getApplicationContext());
+
 
         PayBtn = findViewById(R.id.pay_btn);
         PayStatus = findViewById(R.id.pay_status);

@@ -62,9 +62,9 @@
             android:drawableLeft="@drawable/ic_search_black_24dp"
             android:drawablePadding="16dp"
             android:ems="10"
+            android:hint="Search Destinations"
             android:inputType="textPersonName"
             android:paddingStart="16dp"
-            android:text="Search Destinations"
             android:textColor="#62878F"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -78,23 +78,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Recent"
+        android:text="Trip Plans"
         android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="See All"
-        android:textColor="@android:color/background_dark"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recent_recycler"
@@ -112,7 +99,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Top Places"
+        android:text="Trending"
         android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recent_recycler" />

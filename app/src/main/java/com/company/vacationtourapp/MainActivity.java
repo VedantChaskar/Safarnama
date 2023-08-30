@@ -50,21 +50,31 @@ public class MainActivity extends AppCompatActivity {
         });
 
         List<RecentsData> recentsDataList = new ArrayList<>();
-        recentsDataList.add(new RecentsData("AM Lake","India","From $200",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Nilgiri Hills","India","From $300",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("AM Lake","India","From $200",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Nilgiri Hills","India","From $300",R.drawable.recentimage2));
-        recentsDataList.add(new RecentsData("AM Lake","India","From $200",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Nilgiri Hills","India","From $300",R.drawable.recentimage2));
+        recentsDataList.add(new RecentsData("Machu Picchu","Peru","Rs.75,000/person",R.drawable.machu_picchu));
+        recentsDataList.add(new RecentsData("Bora Bora","France","Rs.1,20,000/person",R.drawable.bora_bora));
+        recentsDataList.add(new RecentsData("Angkor Wat","Cambodia","Rs.50,000/person",R.drawable.ankor_wat));
+        recentsDataList.add(new RecentsData("Great Barrier Reef","Australia","Rs.85,000/person",R.drawable.great_barrier_reef));
+        recentsDataList.add(new RecentsData("Taj Mahal","India","Rs.10,000/person",R.drawable.taj_mahal));
+        recentsDataList.add(new RecentsData("Colosseum","Rome","Rs.80,000/person",R.drawable.colosseum));
+        recentsDataList.add(new RecentsData("Eiffel Tower","France","Rs.1,60,000/person",R.drawable.eiffel_tower));
+        recentsDataList.add(new RecentsData("Grand Canyon","United States","Rs.1,30,000/person",R.drawable.grand_canyon));
+        recentsDataList.add(new RecentsData("Great Wall Of China","China","Rs.70,000/person",R.drawable.the_great_wall_of_china));
+        recentsDataList.add(new RecentsData("Stonehenge","England","Rs.1,80,000/person",R.drawable.stonehenge));
+        recentsDataList.add(new RecentsData("Mount Fuji","Japan","Rs.1,50,000/person",R.drawable.mount_fuji));
+        recentsDataList.add(new RecentsData("Great Pyramid of Giza","Egypt","Rs.1,00,000/person", R.drawable.the_great_pyramid_of_giza));
+        recentsDataList.add(new RecentsData("Victoria Falls","South Africa","Rs.1,15,000/person",R.drawable.victoria_falls));
+        recentsDataList.add(new RecentsData("Glacier-National Park","United States","Rs.1,40,000/person",R.drawable.glacier));
+        recentsDataList.add(new RecentsData("Great Blue Hole","New Mexico","Rs.1,25,000/person",R.drawable.great_blue_hole));
+
 
         setRecentRecycler(recentsDataList);
 
         List<TopPlacesData> topPlacesDataList = new ArrayList<>();
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill","India","$200 - $500",R.drawable.topplaces));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill","India","$200 - $500",R.drawable.topplaces));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill","India","$200 - $500",R.drawable.topplaces));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill","India","$200 - $500",R.drawable.topplaces));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill","India","$200 - $500",R.drawable.topplaces));
+        topPlacesDataList.add(new TopPlacesData("Taj Mahal","India","Rs.10,000/person",R.drawable.taj_mahal));
+        topPlacesDataList.add(new TopPlacesData("Mount Fuji","Japan","Rs.1,50,000/person",R.drawable.mount_fuji));
+        topPlacesDataList.add(new TopPlacesData("Eiffel Tower","France","Rs.1,60,000/person",R.drawable.eiffel_tower));
+        topPlacesDataList.add(new TopPlacesData("Machu Picchu","Peru","Rs.75,000/person",R.drawable.machu_picchu));
+        topPlacesDataList.add(new TopPlacesData("Great Wall Of China","China","Rs.70,000/person",R.drawable.the_great_wall_of_china));
 
         setTopPlacesRecycler(topPlacesDataList);
     }
